@@ -40,3 +40,60 @@ p:hover{
     top: 10px;
     left: 120px;
 }
+.inline{
+    display: inline;
+}
+.display{
+    display: inline;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: darkorange;
+    border: 2px solid black;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.flex-container div{
+    background-color: darkslategrey;
+    border: 2px solid darkturquoise;
+    height: 100px;
+    width: 100px;
+}
+.two{
+    /*flex-grow: 2;*/
+    flex-shrink: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+li{
+    list-style: none;
+}
+@media (max-width:468px){
+    .nav{
+        display:flex;
+        flex-direction: column;
+        color: coral;
+    }
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template: 50px 50px / 50px 50px 50px;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+.grid-container div{
+    border: 2px solid darkslateblue
+}
+.four{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

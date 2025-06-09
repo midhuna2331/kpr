@@ -1,0 +1,10 @@
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.display{
+    display: inline;
+}
+.paragraph,h2{
+    text-align: center;
+}
